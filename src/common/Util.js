@@ -33,9 +33,6 @@ const util = {
     black(str) {
       console.log("%c " + str, "background:black;color:white");
     },
-    black(str) {
-      console.log("%c " + str, "background:black;color:white");
-    },
     red(str) {
       console.log("%c " + str, "background:red;color:white");
     },
