@@ -1,0 +1,430 @@
+body,
+html,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+a,
+p,
+textarea {
+  margin: 0;
+  padding: 0;
+}
+iframe {
+  border: none;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  display: block;
+}
+img {
+  border: none;
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+/*清除浮动*/
+.clearfloat:after {
+  display: block;
+  clear: both;
+  content: "";
+  visibility: hidden;
+  height: 0;
+}
+.clearfloat {
+  zoom: 1;
+}
+#app {
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  max-width: 617px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0;
+  font-size: 12px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  /*margin-left: -5rem;*/
+  background-color: rgb(54, 192, 254);
+
+  background-position: center;
+  background-size: cover;
+  font-family: 'wawa';
+}
+.van-overlay{
+  z-index: 10;
+}
+.page{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-image: url("/img/0/背景.png");
+}
+.absolute {
+  position: absolute;
+  z-index: 1;
+}
+.content-center{
+  position: relative;
+  z-index: 2;
+}
+
+.fl {
+  float: left;
+  display: block;
+}
+.fr {
+  float: right;
+  display: block;
+}
+/* 去掉iPhone、iPad的默认按钮样式 1 */
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="date"],
+select {
+  -webkit-appearance: none;
+  outline: none;
+}
+input {
+  outline: none;
+}
+textarea {
+  -webkit-appearance: none;
+}
+
+/* // flex */
+.flex {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.flex-column {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.flex-wrap{
+  flex-wrap: wrap;
+}
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-start {
+  justify-content: flex-start;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-around {
+  justify-content: space-around;
+}
+.align-start {
+  align-items: flex-start;
+}
+.align-end {
+  align-items: flex-end;
+}
+.align-center {
+  align-items: center;
+}
+.text-center {
+  text-align: center;
+}
+.text-right{
+  text-align: right;
+}
+.line-height {
+  line-height: 1;
+}
+
+/* // 滑动 */
+.scaleUp-enter-active,
+.scaleUp-leave-active {
+  transition: all 0.2s linear;
+}
+.scaleUp-leave-active {
+  transform: translateY(-100%);
+}
+.scaleUp-enter-active,
+.scaleUp-leave-to {
+  transform: translateY(0%);
+}
+.scaleUp-enter-to {
+  transform: translateY(-100%);
+}
+/* fade */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s;
+}
+.fade-enter-active,
+.fade-leave-to {
+  opacity: 1;
+}
+.fade-leave-active,.fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+.spin-all-time {
+  animation: spin 5s linear infinite;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+    transition: all 5s;
+  }
+}
+/* animation */
+.bounce {
+  animation: bounce 2 infinite;
+  opacity: 0.75;
+}
+.pulse {
+  animation: pulse 3.6s infinite;
+}
+.pulse1 {
+  animation: pulse 1s infinite;
+}
+.pulse2 {
+  animation: pulse 1.5s infinite;
+}
+.pulse3 {
+  animation: pulse 2s infinite;
+}
+.pulse4 {
+  animation: pulse 2.5s infinite;
+}
+.pulse5 {
+  animation: pulse 3s infinite;
+}
+.pulse6 {
+  animation: pulse 3.5s infinite;
+}
+.pulse7 {
+  animation: pulse 4s infinite;
+}
+.pulse8 {
+  animation: pulse 4.5s infinite;
+}
+.bounce {
+  animation: bounce 2s infinite;
+}
+.heartBeat {
+  animation: heartBeat 2s infinite;
+}
+.swing {
+  animation: swing 1s infinite;
+}
+.swing1 {
+  animation: swing 2s infinite;
+}
+.swing2 {
+  animation: swing 3s infinite;
+}
+.swin3 {
+  animation: swing 4s infinite;
+}
+.swing4 {
+  animation: swing 5s infinite;
+}
+.swing5 {
+  animation: swing 6s infinite;
+}
+.swing6 {
+  animation: swing 7s infinite;
+}
+.swing7 {
+  animation: swing 8s infinite;
+}
+.swing8 {
+  animation: swing 9s infinite;
+}
+.loading {
+  animation: myloading 3s infinite;
+}
+@keyframes myloading {
+  0% {
+    opacity: 0;
+    margin-left: -3rem;
+  }
+  20% {
+    /* margin-left: -3.2rem; */
+    opacity: 1;
+  }
+  80% {
+    /* margin-left: 3.2rem; */
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    margin-left: 3rem;
+  }
+}
+
+.iphonex {
+  width: 10rem;
+  height: 21.6rem;
+}
+.stage-item{
+  opacity: 0;
+}
+.stage-item.show{
+  opacity: 1;
+}
+.stage-item.action{
+  opacity: 1;
+  transition: left 1s linear,bottom 1s linear,right 1s linear,top 1s linear;
+}
+/* This changes all the animations globally */
+:root {
+  --animate-duration: 2s!important;
+  --animate-delay: 0s;
+}
+
+
+.word{
+  opacity: 0;
+}
+.word.word-animation{
+  opacity: 1;
+  transition: opacity 1s linear;
+}
+
+.big-red {
+  font-size: 24px!important;
+  color: #cc131d!important;
+  padding-top:4px;
+  padding-bottom:4px;
+}
+/*@media (min-width: 375px) {*/
+  /*  html {*/
+    /*    font-size: 25px;*/
+    /* }*/
+/*}*/
+/*@media (min-width: 384px) {*/
+  /*  html {*/
+    /*    font-size: 25.6px;*/
+    /*  }*/
+/*}*/
+/*@media (min-width: 400px) {*/
+  /*  html {*/
+    /*    font-size: 26.67px;*/
+    /*  }*/
+/*}*/
+/*@media (min-width: 414px) {*/
+  /*  html {*/
+    /*    font-size: 27.6px;*/
+    /*  }*/
+/*}*/
+/*@media (min-width: 424px) {*/
+  /*  html {*/
+    /*    font-size: 28.27px;*/
+    /*  }*/
+/*}*/
+/*@media (min-width: 440px) {*/
+  /*  html {*/
+    /*    font-size: 29.33px;*/
+    /*  }*/
+/*}*/
+/*@media (min-width: 480px) {*/
+  /*  html {*/
+    /*    font-size: 32px;*/
+    /*  }*/
+/*}*/
+/*@media (min-width: 520px) {*/
+  /*  html {*/
+    /*    font-size: 34.67px;*/
+    /*  }*/
+/*}*/
+/*@media (min-width: 560px) {*/
+  /*  html {*/
+    /*    font-size: 37.33px;*/
+    /*  }*/
+/*}*/
+/*@media (min-width: 600px) {*/
+  /*  html {*/
+    /*    font-size: 40px;*/
+    /*  }*/
+/*}*/
+/*@media (min-width: 640px) {*/
+  /*  html {*/
+    /*    font-size: 42.67px;*/
+    /*  }*/
+/*}*/
+/*@media (min-width: 680px) {*/
+  /*  html {*/
+    /*    font-size: 45.33px;*/
+    /*  }*/
+/*}*/
+/*@media (min-width: 720px) {*/
+  /*  html {*/
+    /*    font-size: 48px;*/
+    /*  }*/
+/*}*/
+/*@media (min-width: 750px) {*/
+  /*  html {*/
+    /*    font-size: 50px;*/
+    /*  }*/
+/*}*/
+
+
+
+/*.adapter(@width) {*/
+  /*  @media (min-width: @width) {*/
+    /*    html {*/
+      /*      // 750/50 = 720/x*/
+      /*      // x = 720/15*/
+      /*      // round表示对结果进行四舍五入, 2表示保留2位小数*/
+      /*      font-size: round(@width/15, 2);*/
+      /*    }*/
+    /*  }*/
+/*}*/
+
+/*.adapter(375px);*/
+/*.adapter(384px);*/
+/*.adapter(400px);*/
+/*.adapter(414px);*/
+/*.adapter(424px);*/
+/*.adapter(440px);*/
+/*.adapter(480px);*/
+/*.adapter(520px);*/
+/*.adapter(560px);*/
+/*.adapter(600px);*/
+/*.adapter(640px);*/
+/*.adapter(680px);*/
+/*.adapter(720px);*/
+/*.adapter(750px);*/
+

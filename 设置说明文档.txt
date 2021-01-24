@@ -1,0 +1,8 @@
+海报二维码
+/img/19/二维码.png
+背景音乐
+/music/bgm.mp3
+设置接口
+/font/set.js
+旋转音乐图标
+/img/0/音乐.png

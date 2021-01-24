@@ -1,0 +1,1 @@
+window.ApiUrl = "http://47.100.39.143:8825/index/user"
